@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 46805240}
   - component: {fileID: 46805239}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Level 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: LEVEL
+  m_Text: LEVEL 1
 --- !u!222 &46805240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -524,6 +524,8 @@ GameObject:
   - component: {fileID: 461184089}
   - component: {fileID: 461184091}
   - component: {fileID: 461184090}
+  - component: {fileID: 461184092}
+  - component: {fileID: 461184093}
   m_Layer: 5
   m_Name: Level Completed
   m_TagString: Untagged
@@ -588,6 +590,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461184088}
   m_CullTransparentMesh: 0
+--- !u!95 &461184092
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461184088}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48eb978f8655e5344b4856a531a10732, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &461184093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461184088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df2c468c0cced34a8190d025fc22c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &483665831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8766477777063423145, guid: ce5e861708e62e84cb5a07a6eeca21cb,
@@ -1479,7 +1512,7 @@ GameObject:
   - component: {fileID: 1226186836}
   - component: {fileID: 1226186835}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Complete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

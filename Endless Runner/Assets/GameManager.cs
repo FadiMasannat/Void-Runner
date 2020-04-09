@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     bool endgame = false;
 
+    public GameObject CompleteLevelUI;
 
     // Start is called before the first frame update
 
@@ -17,8 +18,13 @@ public class GameManager : MonoBehaviour
         {
             endgame = true;
             Debug.Log("Game Over");
-            restart();
+            Invoke("restart", 2f);
         }
+    }
+
+    public void CompleteLevel()
+    {
+        CompleteLevelUI.SetActive(true); 
     }
 
 

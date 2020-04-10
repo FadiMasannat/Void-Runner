@@ -6,7 +6,7 @@ public class forwardforce : MonoBehaviour
 {
 
     public Rigidbody rb;
-    public float Sideforce = 500f;
+    public float Sideforce = 550f;
     public float ForwardForce = 2000f;
 
     // Start is called before the first frame update

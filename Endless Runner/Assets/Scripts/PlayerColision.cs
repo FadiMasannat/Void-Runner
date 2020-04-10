@@ -6,6 +6,7 @@ public class PlayerColision : MonoBehaviour
 {
     public forwardforce movement;
     public GameManager gameManager;
+    
      void OnCollisionEnter(Collision collisionInfo)
     {
         if (collisionInfo.collider.tag == "Obstacle")
@@ -13,7 +14,10 @@ public class PlayerColision : MonoBehaviour
             movement.enabled = false;
             FindObjectOfType<GameManager>().Endgame();
         }
+
     }
+
+
 
 
     // Start is called before the first frame update

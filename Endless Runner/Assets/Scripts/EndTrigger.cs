@@ -5,11 +5,17 @@ using UnityEngine;
 public class EndTrigger : MonoBehaviour
 
 {
-    public GameManager gamemanager; 
-    void OnTriggerEnter()
+    public GameManager gamemanager;
+    void OnTriggerEnter(Collider collider)
     {
-        gamemanager.CompleteLevel();
+        if (collider.tag == "Finish")
+        {
+            gamemanager.CompleteLevel();
+        }
+        
     }
+    
+
 
     // Start is called before the first frame update
     void Start()

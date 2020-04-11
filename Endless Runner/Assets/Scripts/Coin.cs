@@ -9,7 +9,7 @@ public class Coin : MonoBehaviour
     {
         if (collisionInfo.collider.tag == "Player")
         {
-            Destroy(gameObject);
+            Debug.Log("Coin");
         }
     }
     // Start is called before the first frame update

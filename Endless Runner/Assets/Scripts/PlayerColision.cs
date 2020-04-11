@@ -14,8 +14,13 @@ public class PlayerColision : MonoBehaviour
             movement.enabled = false;
             FindObjectOfType<GameManager>().Endgame();
         }
+        if (collisionInfo.collider.tag == "Coin")
+        {
+            Destroy(gameObject);
+        }
 
     }
+
 
 
 
